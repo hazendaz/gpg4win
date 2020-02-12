@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.github.hazendaz</groupId>
+        <artifactId>base-parent</artifactId>
+        <version>24</version>
+        <relativePath />
+    </parent>
+
+    <groupId>com.github.hazendaz.gpg4win</groupId>
+    <artifactId>gpg4win</artifactId>
+    <version>3.1.11-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>gpg4win</name>
+    <description>Distribution for Gpg4win</description>
+    <url>https://hazendaz.github.io/gpg4win/</url>
+    <licenses>
+        <license>
+            <name>GNU Library General Public License, version 2.0</name>
+            <url>https://www.gnu.org/licenses/old-licenses/lgpl-2.0.en.html</url>
+            <distribution>repo</distribution>
+            <comments>See 'LICENSE' file attached to this project from gpg4win.</comments>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:ssh://git@github.com/hazendaz/gpg4win.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/hazendaz/gpg4win.git</developerConnection>
+        <url>https://github.com/hazendaz/gpg4win</url>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <site>
+            <id>gh-pages</id>
+            <name>Gpg4win Distribution Wrapper GitHub Pages</name>
+            <url>github:https://hazendaz.github.io/gpg4win/</url>
+        </site>
+    </distributionManagement>
+
+    <properties>
+        <gpg4win.version>3.1.11</gpg4win.version>
+        <download-plugin.version>1.5.0</download-plugin.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <!-- Download -->
+            <plugin>
+                <groupId>com.googlecode.maven-download-plugin</groupId>
+                <artifactId>download-maven-plugin</artifactId>
+                <version>${download-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>Download Executable</id>
+                        <goals>
+                            <goal>wget</goal>
+                        </goals>
+                        <configuration>
+                            <url>https://files.gpg4win.org/gpg4win-${gpg4win.version}.exe</url>
+                            <outputDirectory>${project.build.directory}/gpg4win</outputDirectory>
+                        </configuration>
+                    </execution>
+                    <!-- License requires inclusion of source as well -->
+                    <execution>
+                        <id>Download Source</id>
+                        <goals>
+                            <goal>wget</goal>
+                        </goals>
+                        <configuration>
+                            <url>https://files.gpg4win.org/gpg4win-${gpg4win.version}.tar.bz2</url>
+                            <outputDirectory>${project.build.directory}/gpg4win</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- Assembly -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptors>
+                        <descriptor>${project.basedir}/src/assembly/assembly.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
