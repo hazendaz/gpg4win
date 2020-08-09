@@ -41,7 +41,7 @@
     </distributionManagement>
 
     <properties>
-        <gpg4win.version>3.1.11</gpg4win.version>
+        <gpg4win.version>3.1.12</gpg4win.version>
         <download-plugin.version>1.6.0</download-plugin.version>
     </properties>
 
