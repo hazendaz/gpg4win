@@ -34,9 +34,9 @@
     </scm>
     <distributionManagement>
         <site>
-            <id>gh-pages</id>
+            <id>gh-pages-scm</id>
             <name>Gpg4win Distribution Wrapper GitHub Pages</name>
-            <url>github:https://hazendaz.github.io/gpg4win/</url>
+            <url>scm:git:ssh://git@github.com/hazendaz/gpg4win.git</url>
         </site>
     </distributionManagement>
 
