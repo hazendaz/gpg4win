@@ -11,7 +11,7 @@
 
     <groupId>com.github.hazendaz.gpg4win</groupId>
     <artifactId>gpg4win</artifactId>
-    <version>4.0.2-SNAPSHOT</version>
+    <version>4.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>gpg4win</name>
@@ -41,7 +41,7 @@
     </distributionManagement>
 
     <properties>
-        <gpg4win.version>4.0.2</gpg4win.version>
+        <gpg4win.version>4.0.3</gpg4win.version>
         <download-plugin.version>1.6.8</download-plugin.version>
     </properties>
 
