@@ -84,7 +84,7 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
-                            <url>https://files.gpg4win.org/gpg4win-${gpg4win.version}.tar.bz2</url>
+                            <url>https://files.gpg4win.org/gpg4win-${gpg4win.version}.tar.xz</url>
                             <outputDirectory>${project.build.directory}/gpg4win</outputDirectory>
                         </configuration>
                     </execution>
