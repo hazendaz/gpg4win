@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assembly xmlns="https://maven.apache.org/ASSEMBLY/2.1.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="https://maven.apache.org/ASSEMBLY/2.1.0 https://maven.apache.org/xsd/assembly-2.1.0.xsd">
 <!--
 
     gpg4win - Distribution for Gpg4win
@@ -21,11 +19,13 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 -->
+<assembly xmlns="https://maven.apache.org/ASSEMBLY/2.2.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://maven.apache.org/ASSEMBLY/2.2.0 https://maven.apache.org/xsd/assembly-2.2.0.xsd">
 
     <id>distro</id>
 
     <formats>
-        <format>tar.gz</format>
+        <format>tar.xz</format>
     </formats>
 
     <includeBaseDirectory>false</includeBaseDirectory>
