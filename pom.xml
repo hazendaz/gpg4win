@@ -63,7 +63,7 @@
 
     <properties>
         <gpg4win.version>4.3.0</gpg4win.version>
-        <download-plugin.version>1.8.0</download-plugin.version>
+        <download-plugin.version>1.8.1</download-plugin.version>
     </properties>
 
     <build>
