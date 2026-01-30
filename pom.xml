@@ -32,7 +32,7 @@
 
     <groupId>com.github.hazendaz.gpg4win</groupId>
     <artifactId>gpg4win</artifactId>
-    <version>5.0.1</version>
+    <version>5.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>gpg4win</name>
@@ -50,7 +50,7 @@
     <scm>
         <connection>scm:git:ssh://git@github.com/hazendaz/gpg4win.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/hazendaz/gpg4win.git</developerConnection>
-        <tag>gpg4win-5.0.1</tag>
+        <tag>HEAD</tag>
         <url>https://github.com/hazendaz/gpg4win</url>
     </scm>
     <distributionManagement>
