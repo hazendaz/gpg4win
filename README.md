@@ -1,5 +1,10 @@
-Gpg4win Distro
---------------
+# Gpg4win Distro
+
+[![Java CI](https://github.com/hazendaz/gpg4win/actions/workflows/ci.yaml/badge.svg)](https://github.com/hazendaz/gpg4win/actions/ci.yaml)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.hazendaz.gpg4win/gpg4win)](https://central.sonatype.com/artifact/com.github.hazendaz.gpg4win/gpg4win)
+![License](https://img.shields.io/github/license/hazendaz/gpg4win?label=GPL-2.0)
+
+![hazendaz](src/site/resources/images/hazendaz-banner.jpg)
 
 This project makes gpg4win distribution available from maven central.
 
