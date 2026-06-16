@@ -2,7 +2,7 @@
 
 [![Java CI](https://github.com/hazendaz/gpg4win/actions/workflows/ci.yaml/badge.svg)](https://github.com/hazendaz/gpg4win/actions/ci.yaml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.hazendaz.gpg4win/gpg4win)](https://central.sonatype.com/artifact/com.github.hazendaz.gpg4win/gpg4win)
-![License](https://img.shields.io/github/license/hazendaz/gpg4win?label=GPL-2.0)
+![License](https://img.shields.io/badge/license-GPL--2.0-blue.svg)
 
 ![hazendaz](src/site/resources/images/hazendaz-banner.jpg)
 
