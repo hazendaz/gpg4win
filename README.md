@@ -13,3 +13,8 @@ For more information on ant, please see [gpg4win](https://www.gpg4win.org/)
 # Motivation #
 
 Gpg4win does not currently provide a maven central distribution. This project aims to solve that by providing users an alternative location to pull.
+
+# Note #
+
+Project is above limit caps to sonatype so this is now deprecated.  Currently gpg4win does not make immutable distributions that would serve same purpose in github.
+I'll ask they do that but if not, use alternative such as git-for-windows that has gpg within it and works reasonable well for same purpose.
